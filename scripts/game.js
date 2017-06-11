@@ -15,14 +15,14 @@ window.addEventListener("load",function() {
       var player;
       var levelLayer; 
 
-      Q.stageTMX("level1.tmx",stage); 
+      Q.stageTMX("good.tmx",stage); 
       player = Q("Player").first();
               
       stage.add("viewport").follow(player,{x: true, y: true});      
     });
 
     //load assets
-    Q.loadTMX("level1.tmx, sprites.json, sprites.png, kill-enemy.mp3, jump.mp3", function() {       
+    Q.loadTMX("good.tmx, sprites.json, sprites.png, kill-enemy.mp3, jump.mp3", function() {       
       Q.compileSheets("sprites.png","sprites.json");     
       Q.stageScene("level");
     });
